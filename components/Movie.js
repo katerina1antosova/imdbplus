@@ -10,7 +10,7 @@ import SmallCardList from "./SmallCardList"
 
 const resolveDirectors = {
   en: 'Directors',
-  nl: 'Režiséři',
+  cs: 'Režiséři',
 }
 
 const resolveWriters = {
@@ -20,17 +20,17 @@ const resolveWriters = {
 
 const resolveStars = {
   en: 'Stars',
-  nl: 'Účinkuje',
+  cs: 'Účinkuje',
 }
 
 const resolveMerchandise = {
   en: 'Merchandise',
-  nl: 'Merch',
+  cs: 'Merch',
 }
 
 const resolveNews = {
   en: 'News',
-  nl: 'Novinky',
+  cs: 'Novinky',
 }
 
 const Movie = ({ data, level }) => {
