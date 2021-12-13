@@ -7,7 +7,7 @@ body {
   font-family: 'Karla', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 20px;
-  background: rgb(193, 223, 62);
+  background: #f2f2f2;
 }
 
 
@@ -22,7 +22,7 @@ h4,
 }
 
 h1 {
-  font-family: 'Bungee Shade', cursive;
+  font-family: Roboto, cursive;
   font-size: 2em;
   line-height: 1.3em;
 
@@ -44,10 +44,10 @@ h3 {
 }
 
 a {
-  color: black;
+  color: #ba0c2f;
 
   &:visited {
-    color: black;
+    color: #ba0c2f;
   }
 }
 

@@ -6,6 +6,7 @@
   }
 }
 
+
 .navigation {
   font-family: 'Karla', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -16,7 +17,7 @@
 
   .navlogo {
     img {
-      min-width: 200px !important;
+      min-width: 120px !important;
     }
   }
 
@@ -73,7 +74,7 @@
         border: 5px solid transparent;
 
         &:hover {
-          border: 5px solid black;
+          border: 5px solid rgb(0, 0, 0);
         }
       }
     }

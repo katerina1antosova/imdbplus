@@ -2,22 +2,23 @@ import styles from "../styles/Navigation.module.scss"
 import Image from "next/image"
 
 const Navigation = ({ locale, locales }) => {
-  const resolveMovies = {
-    en: 'Movies',
-    nl: 'Films',
+  const resolveDestinations = {
+    en: 'Destinations',
+    cs: 'Destinace',
   }
-  const resolvePeople = {
-    en: 'People',
-    nl: 'Mensen',
+  const resolveAccomodations = {
+    en: 'Accomodations',
+    cs: 'Ubytování',
   }
-  const resolveNews = {
-    en: 'News',
-    nl: 'Nieuws',
+  const resolveTransportations = {
+    en: 'Transportations',
+    cs: 'Doprava',
   }
-  const resolveMerchandise = {
-    en: 'Shop',
-    nl: 'Winkel',
+  const resolveActivities = {
+    en: 'Activities',
+    cs: 'Aktivity',
   }
+  
   let homeurl = "/";
   if (locale != 'default') {
     homeurl = "/" + locale;
@@ -30,28 +31,28 @@ const Navigation = ({ locale, locales }) => {
 
         <div className={styles.navlogo}>
           <a href={homeurl}>
-            {/* <img
-              src="https://a.storyblok.com/f/133261/3039x582/a60d166ec2/logo-colored-full.png/m/200x0"
-              alt="IMDBPlus Logo"
+            <img
+              src="https://a.storyblok.com/f/138693/500x500/c2c7c96e7d/packandgo_logo.jpeg"
+              alt="Pack and go logo"
               className=""
-            /> */}
-            <Image src="/logo-colored-full.png" alt="IMDBPlus Logo" width="128" height="25" />
+            />
+            <Image src="/packandgo_logo.jpeg" alt="Pack and go logo" width="128" height="25" />
           </a>
         </div>
         <div className={styles.navlinkswrapper}>
           <div className={styles.navlinks}>
+            
             <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/movies`} className={styles.movie}>{resolveMovies[locale]}</a>
+              <a href={`${defaultLocale}pages/destinations`} className={styles.movie}>{resolveDestinations[locale]}</a>
             </div>
             <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/people`} className={styles.personality}>{resolvePeople[locale]}</a>
+              <a href={`${defaultLocale}pages/accomodations`} className={styles.movie}>{resolveAccomodations[locale]}</a>
+            </div><div className={styles.navlink}>
+              <a href={`${defaultLocale}pages/transportations`} className={styles.movie}>{resolveTransportations[locale]}</a>
+            </div><div className={styles.navlink}>
+              <a href={`${defaultLocale}pages/activities`} className={styles.movie}>{resolveActivities[locale]}</a>
             </div>
-            <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/news`} className={styles.newsitem}>{resolveNews[locale]}</a>
-            </div>
-            <div className={styles.navlink}>
-              <a href={`${defaultLocale}pages/shop`} className={styles.product}>{resolveMerchandise[locale]}</a>
-            </div>
+            
           </div>
           <div className={styles.navlocales}>
             {

@@ -25,6 +25,14 @@ import TwoCol from './TwoCol'
 import Title from './Title'
 import TopMovies from './TopMovies'
 import AgeRating from './AgeRating'
+import Destination from './Destination'
+import Activity from './Activity'
+import Accomodation from './Accomodation'
+import Document from './Document'
+import Transportation from './Transportation'
+import Service from './Service'
+import Passenger from './Passenger'
+import DestinationList from './DestinationList'
 
 const Components = {
   'teaser': Teaser,
@@ -53,7 +61,15 @@ const Components = {
   'twocol':TwoCol,
   'title':Title,
   'topmovies':TopMovies,
-  'agerating':AgeRating
+  'agerating':AgeRating,
+  'destination':Destination,
+  'activity':Activity,
+  'accomodation':Accomodation,
+  'document':Document,
+  'transportation':Transportation,
+  'service':Service,
+  'passenger':Passenger,
+  'destinationlist':DestinationList
 }
 
 
