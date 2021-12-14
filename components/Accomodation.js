@@ -62,6 +62,11 @@ const Accomodation = ({ data, level }) => {
   } else {
     var content = data;
   }
+  if (content.destination) {
+    var destinations = data.rels.filter(obj => {
+      return content.destination.includes(obj.uuid);
+    });
+  }
 
   // const [products, setProducts] = useState([]);
   // getData(data.story.uuid, locale, content.preview = false, 'product', 'movies').then(
@@ -129,6 +134,7 @@ const Accomodation = ({ data, level }) => {
           <div className={styles.synopsis}>
             Description: {render(content.description)}
           </div>
+          {destinations && destinations.length > 0 && <SmallCardList items={destinations} title={"Destination"} type="destination"></SmallCardList>}
           {/* <div className={styles.peoplesegment}>
             <div className={styles.content}>
               {directors && directors.length > 0 && <RelatedItemGallerySmall items={directors} title={resolveDirectors[locale]} type="personality"></RelatedItemGallerySmall>}
