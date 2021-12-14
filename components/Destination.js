@@ -63,6 +63,22 @@ const Destination = ({ data, level }) => {
     var content = data;
   }
 
+  const [activities, setActivities] = useState([]);
+  getData(data.story.uuid, data.story.lang, content.preview = false, 'activity', 'destination').then(
+    function (result) {
+      setActivities(result.data.stories);
+    });
+    const [accomodations, setAccomodations] = useState([]);
+  getData(data.story.uuid, data.story.lang, content.preview = false, 'accomodation', 'destination').then(
+    function (result) {
+      setAccomodations(result.data.stories);
+    });
+    const [transportations, setTransportations] = useState([]);
+  getData(data.story.uuid, data.story.lang, content.preview = false, 'transportation', 'destination').then(
+    function (result) {
+      setTransportations(result.data.stories);
+    });
+
   // const [products, setProducts] = useState([]);
   // getData(data.story.uuid, locale, content.preview = false, 'product', 'movies').then(
   //   function (result) {
@@ -128,6 +144,9 @@ const Destination = ({ data, level }) => {
 
           {products && products.length > 0 && <SmallCardList items={products} title={resolveMerchandise[locale]} type="product"></SmallCardList>}
           {newsitems && newsitems.length > 0 && <SmallCardList items={newsitems} title={resolveNews[locale]} type="newsitem"></SmallCardList>} */}
+        {activities&&activities.length>0&&<RelatedItemGallery items={activities} title="Activities" type="activity"></RelatedItemGallery>}
+        {transportations&&transportations.length>0&&<RelatedItemGallery items={transportations} title="Transportations" type="transportation"></RelatedItemGallery>}
+        {accomodations&&accomodations.length>0&&<RelatedItemGallery items={accomodations} title="Accomodations" type="accomodation"></RelatedItemGallery>}
         </div>
         </div>
       </main>
