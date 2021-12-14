@@ -33,6 +33,9 @@ import Transportation from './Transportation'
 import Service from './Service'
 import Passenger from './Passenger'
 import DestinationList from './DestinationList'
+import AccomodationList from './AccomodationList'
+import TransportationList from './TransportationList'
+import ActivityList from './ActivityList'
 
 const Components = {
   'teaser': Teaser,
@@ -69,7 +72,10 @@ const Components = {
   'transportation':Transportation,
   'service':Service,
   'passenger':Passenger,
-  'destinationlist':DestinationList
+  'destinationlist':DestinationList,
+  'accomodationlist':AccomodationList,
+  'transportationlist':TransportationList,
+  'activitylist':ActivityList
 }
 
 

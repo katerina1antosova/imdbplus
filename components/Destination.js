@@ -84,7 +84,7 @@ const Destination = ({ data, level }) => {
         {/* <div className={[styles.movie, styles.test].join(' ')}> */}
         <div className={styles.destination}>
           <h1 className={styles.title}>
-            {content.name_country}
+            {content.title}
           </h1>
           <div className={styles.destination}>
           <h2 className={styles.title}>

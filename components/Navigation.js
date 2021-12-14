@@ -47,9 +47,11 @@ const Navigation = ({ locale, locales }) => {
             </div>
             <div className={styles.navlink}>
               <a href={`${defaultLocale}pages/accomodations`} className={styles.movie}>{resolveAccomodations[locale]}</a>
-            </div><div className={styles.navlink}>
+            </div>
+            <div className={styles.navlink}>
               <a href={`${defaultLocale}pages/transportations`} className={styles.movie}>{resolveTransportations[locale]}</a>
-            </div><div className={styles.navlink}>
+            </div>
+            <div className={styles.navlink}>
               <a href={`${defaultLocale}pages/activities`} className={styles.movie}>{resolveActivities[locale]}</a>
             </div>
             
