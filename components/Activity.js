@@ -116,8 +116,8 @@ const Activity = ({ data, level }) => {
               </div></a>
             ))}
             </div>} */}
-          {/* <div className={styles.mainpicture} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}>
-          </div> */}
+          <div className={styles.mainpicture} style={{ backgroundImage: `url("${content.mainpicture.filename}")` }}>
+          </div>
           {/* <div className={styles.imagegallery}>
             <InPageSlideshow pictures={pictures}></InPageSlideshow>
           </div>   */}
