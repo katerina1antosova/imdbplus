@@ -2,14 +2,17 @@
 
 .list {
   margin-bottom: 40px;
+  font-family: 'Monserrat';
   a{
     text-decoration: none;
     color: black;
     &:active{
       color: black;
+      font-family: 'Montserrat';
     }
   }
   .item {
+    font-family: 'Montserrat';
     border:10px solid black;
     padding: 20px;
     margin-bottom: 40px;
@@ -17,11 +20,15 @@
     .date {}
 
     .mainpart {
+      font-family: 'Montserrat';
       .title {
         margin: 10px 0;
+        font-family: 'Montserrat';
       }
 
-      .introduction {}
+      .introduction {
+        font-family: 'Montserrat';
+      }
     }
 
   }

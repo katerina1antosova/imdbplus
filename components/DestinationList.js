@@ -6,49 +6,22 @@ import { getAllItems } from "../utils/storyblok"
 import SmallCardList from "./SmallCardList"
 
 const DestinationList = ({ data, level, locale }) => {
-  if (level === 'data') {
-    var content = data.story.content;
-  } else {
-    var content = data;
-  }
+  
   const [sortby, setSortby] = useState();
-
-  function updateSortby(sortby){
-    setSortby(sortby);
-    getAllItems('destination', locale, sortby).then(
-      function (result) {
-        setItems(result.data.stories);
-      });
-  }
   
 
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState([])
   getAllItems('destination', locale, sortby).then(
     function (result) {
       setItems(result.data.stories);
     });
 
   return (
-    <div className={styles.list}>
-      <div className={styles.orderbypicker}>
-        <div className={styles.orderbytitle}>
-          Order by
-        </div>
-        <div className={styles.orderbyoptions} >
-          <div className={styles.orderbyoption} onClick={() => updateSortby("first_published_at:desc")}>
-            Date
-          </div>
-          <div className={styles.orderbyoption} onClick={() => updateSortby("name:asc")}>
-            Title
-          </div>
-        </div>
-      </div>
-      <div>
+    <div className={styles.mainpart}>
+      
         {items && items.length > 0 && <SmallCardList items={items} type="movie"></SmallCardList>}
       </div>
-    </div>
-
-  );
+  )
 };
 
 export default DestinationList;
