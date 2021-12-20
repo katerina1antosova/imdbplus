@@ -132,7 +132,7 @@ const Activity = ({ data, level }) => {
             {render(content.short)}
           </div> */}
           <div className={styles.synopsis}>
-            Description: {render(content.description)}
+            {render(content.description)}
           </div>
           {destinations && destinations.length > 0 && <SmallCardList items={destinations} title={"Destination"} type="destination"></SmallCardList>}
           {/* <div className={styles.peoplesegment}>

@@ -89,7 +89,7 @@ const Transportation = ({ data, level }) => {
         {/* <div className={[styles.movie, styles.test].join(' ')}> */}
         <div className={styles.transportation}>
           <h1 className={styles.title}>
-            Type: {content.type}
+            {content.type}
           </h1>
           
           
@@ -117,7 +117,7 @@ const Transportation = ({ data, level }) => {
             {render(content.short)}
           </div> */}
           <div className={styles.synopsis}>
-            Description: {render(content.description)}
+            {render(content.description)}
           </div>
           {destinations && destinations.length > 0 && <SmallCardList items={destinations} title={"Destination"} type="destination"></SmallCardList>}
           {/* <div className={styles.peoplesegment}>

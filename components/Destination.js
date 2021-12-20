@@ -102,10 +102,7 @@ const Destination = ({ data, level }) => {
           <h1 className={styles.title}>
             {content.title}
           </h1>
-          <div className={styles.destination}>
-          <h2 className={styles.title}>
-            {content.name_city}
-          </h2>
+          
           
           {/* <div className={styles.genrelist}>
             {genres.map((item, index) => (
@@ -131,7 +128,7 @@ const Destination = ({ data, level }) => {
             {render(content.short)}
           </div> */}
           <div className={styles.description}>
-            Description: {render(content.description)}
+            {render(content.description)}
           </div>
           {/* <div className={styles.peoplesegment}>
             <div className={styles.content}>
@@ -148,7 +145,7 @@ const Destination = ({ data, level }) => {
         {transportations&&transportations.length>0&&<RelatedItemGallery items={transportations} title="Transportations" type="transportation"></RelatedItemGallery>}
         {accomodations&&accomodations.length>0&&<RelatedItemGallery items={accomodations} title="Accomodations" type="accomodation"></RelatedItemGallery>}
         </div>
-        </div>
+        
       </main>
     </SbEditable>
   )
