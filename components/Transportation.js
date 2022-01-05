@@ -89,7 +89,7 @@ const Transportation = ({ data, level }) => {
         {/* <div className={[styles.movie, styles.test].join(' ')}> */}
         <div className={styles.transportation}>
           <h1 className={styles.title}>
-            {content.type}
+            {content.title}
           </h1>
           
           

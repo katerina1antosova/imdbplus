@@ -93,19 +93,19 @@ const Accomodation = ({ data, level }) => {
           </h1>
           <div className={styles.accomodation}>
           <h2 className={styles.title}>
-            Type: {content.type}
+            {content.type}
           </h2>
           <div className={styles.producthead_second}>
               <div className={styles.price}>
-                Price: €{content.price}
+                {content.price}
               </div>
               <div className={styles.producthead_second}>
               <div className={styles.price}>
-                Distance from center: {content.distance_from_center} km
+                {content.distance_from_center}
               </div>
               <div className={styles.accomodation}>
           <h3 className={styles.title}>
-            Rating: {content.rating}
+            {content.rating}
           </h3>
           
           {/* <div className={styles.genrelist}>

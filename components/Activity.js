@@ -98,15 +98,15 @@ const Activity = ({ data, level }) => {
           </h2>
           <div className={styles.producthead_second}>
               <div className={styles.price}>
-                Price: €{content.price}
+                {content.price}
               </div>
               <div className={styles.producthead_second}>
               <div className={styles.price}>
-                Duration: {content.duration} hour(s)
+                {content.duration}
               </div>
               <div className={styles.availability}>
           <h3 className={styles.title}>
-            Availability: {content.availability}
+            {content.availability}
           </h3>
           {/* <div className={styles.genrelist}>
             {genres.map((item, index) => (
