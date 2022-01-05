@@ -127,7 +127,7 @@ const Destination = ({ data, level }) => {
           {/* <div className={styles.short}>
             {render(content.short)}
           </div> */}
-          <div className={styles.description}>
+          <div className={styles.synopsis}>
             {render(content.description)}
           </div>
           {/* <div className={styles.peoplesegment}>
