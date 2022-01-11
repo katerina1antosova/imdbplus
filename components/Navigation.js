@@ -36,7 +36,7 @@ const Navigation = ({ locale, locales }) => {
               alt="Pack and go logo"
               className=""
             />
-            <Image src="/packandgo_logo.jpeg" alt="Pack and go logo" width="0" height="0" />
+            <Image src="/packandgo_logo.jpeg" alt="Pack and go logo" width="128" height="25" />
           </a>
         </div>
         <div className={styles.navlinkswrapper}>
