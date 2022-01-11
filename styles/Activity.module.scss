@@ -14,6 +14,7 @@
 
   .short {
     font-weight: 800;
+    text-align: center;
   }
 
   .genrelist {
@@ -36,14 +37,18 @@
       font-size: 1.4em;
       font-weight: 800;
       margin-bottom: 20px;
+      text-align: center;
 
     }
 
-    .content {}
+    .content {
+      text-align: center;
+    }
   }
 
   .title {
     font-family: 'Montserrat';
+    text-align: center;
   }
 
   .summary {}
@@ -53,7 +58,9 @@
     text-align: justify;
   }
 
-  .introduction {}
+  .introduction {
+    text-align: center;
+  }
 
   .main_poster {
     img {}
@@ -81,5 +88,9 @@
 
   .trailers {
     .trailer {}
+  }
+
+  .price {
+    text-align: center;
   }
 }

@@ -95,11 +95,11 @@ const Accomodation = ({ data, level }) => {
           <h2 className={styles.title}>
             {content.type}
           </h2>
-          <div className={styles.producthead_second}>
+          <div className={styles.accomodation}>
               <div className={styles.price}>
                 {content.price}
               </div>
-              <div className={styles.producthead_second}>
+              <div className={styles.accomodation}>
               <div className={styles.price}>
                 {content.distance_from_center}
               </div>

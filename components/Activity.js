@@ -96,15 +96,15 @@ const Activity = ({ data, level }) => {
           <h2 className={styles.title}>
             {content.name}
           </h2>
-          <div className={styles.producthead_second}>
+          <div className={styles.activity}>
               <div className={styles.price}>
                 {content.price}
               </div>
-              <div className={styles.producthead_second}>
+              <div className={styles.activity}>
               <div className={styles.price}>
                 {content.duration}
               </div>
-              <div className={styles.producthead_second}>
+              <div className={styles.activity}>
           <h3 className={styles.title}>
             {content.availability}
           </h3>
