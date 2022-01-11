@@ -104,7 +104,7 @@ const Activity = ({ data, level }) => {
               <div className={styles.price}>
                 {content.duration}
               </div>
-              <div className={styles.availability}>
+              <div className={styles.producthead_second}>
           <h3 className={styles.title}>
             {content.availability}
           </h3>
