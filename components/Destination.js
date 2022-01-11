@@ -145,6 +145,8 @@ const Destination = ({ data, level }) => {
         {transportations&&transportations.length>0&&<RelatedItemGallery items={transportations} title="Transportations" type="transportation"></RelatedItemGallery>}
         {accomodations&&accomodations.length>0&&<RelatedItemGallery items={accomodations} title="Accomodations" type="accomodation"></RelatedItemGallery>}
         </div>
+
+    
         
       </main>
     </SbEditable>
