@@ -7,7 +7,7 @@ const Navigation = ({ locale, locales }) => {
     cs: 'Destinace',
   }
   const resolveAccomodations = {
-    en: 'Accomodations',
+    en: 'Accommodations',
     cs: 'Ubytování',
   }
   const resolveTransportations = {
