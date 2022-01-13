@@ -143,7 +143,7 @@ const Destination = ({ data, level }) => {
           {newsitems && newsitems.length > 0 && <SmallCardList items={newsitems} title={resolveNews[locale]} type="newsitem"></SmallCardList>} */}
         {activities&&activities.length>0&&<RelatedItemGallery items={activities} title="Activities" type="activity"></RelatedItemGallery>}
         {transportations&&transportations.length>0&&<RelatedItemGallery items={transportations} title="Transportations" type="transportation"></RelatedItemGallery>}
-        {accomodations&&accomodations.length>0&&<RelatedItemGallery items={accomodations} title="Accomodations" type="accomodation"></RelatedItemGallery>}
+        {accomodations&&accomodations.length>0&&<RelatedItemGallery items={accomodations} title="Accommodations" type="accommodation"></RelatedItemGallery>}
         </div>
 
     
